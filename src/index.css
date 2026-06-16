@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --gold: #d4af37;
+  --gold-light: #e8c84a;
+  --black: #0a0a0a;
+  --black-2: #0f0f0f;
+  --black-3: #161616;
+  --border: #1a1a1a;
+  --border-2: #2a2a2a;
+  --text: #e8e0d0;
+  --text-muted: #888888;
+  --text-dim: #555555;
+  --accent: var(--gold);
+  --accent-bg: rgba(212, 175, 55, 0.08);
+  --accent-border: var(--gold);
+  --text-h: var(--text);
+  --social-bg: var(--black-3);
+  --shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #e8e0d0;
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+  font-family: "Inter", system-ui, sans-serif;
+}
+ul {
+  list-style: none;
+}
+.App {
+  display: flex;
+  flex: 1;
+  padding: 32px;
+
+  @media (max-width: 1024px) {
+    padding: 24px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
